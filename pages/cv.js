@@ -1,7 +1,7 @@
 import styled from "styled-components";
 
 const CVStyles = styled.div`
-  margin: 0 3rem;
+  margin: 0 5rem;
 
   h2 {
     font-size: 0.9rem;
