@@ -40,7 +40,7 @@ export default function CV() {
           Tallahassee, FL
         </li>
         <li>
-          <span>2017</span> Masters of Fine Art - Virginia Commonwealth
+          <span>2017</span> Masters of Fine Arts - Virginia Commonwealth
           University, Richmond, VA
         </li>
       </ul>
