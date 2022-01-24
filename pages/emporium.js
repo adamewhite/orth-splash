@@ -8,7 +8,7 @@ const EmporiumStyles = styled.div`
 
   iframe {
     padding: 1rem 3rem;
-    
+
     /* width: 100%; */
     /* border: 5px solid red; */
     /* width: 100% !important; */
@@ -23,8 +23,6 @@ export default function Emporium() {
         src="https://player.vimeo.com/video/191511657?h=e48467f469"
         width="500"
         height="281"
-        frameborder="0"
-        allowfullscreen
       ></iframe>
     </EmporiumStyles>
   );
