@@ -21,8 +21,8 @@ export default function Emporium() {
       <iframe
         title="vimeo-player"
         src="https://player.vimeo.com/video/191511657?h=e48467f469"
-        width="500"
-        height="281"
+        width="800"
+        height="450"
       ></iframe>
     </EmporiumStyles>
   );
