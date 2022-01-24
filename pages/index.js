@@ -9,7 +9,7 @@ const HomeStyles = styled.main`
   justify-content: center;
 
   div {
-    width: 300px;
+    width: 400px;
   }
 `;
 
