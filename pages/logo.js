@@ -9,7 +9,8 @@ const HomeStyles = styled.main`
   justify-content: center;
 
   div {
-    width: 400px;
+    width: 1000px;
+    min-width: 500px;
   }
 `;
 
