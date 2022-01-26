@@ -17,7 +17,7 @@ const HeaderStyles = styled.header`
     justify-content: center;
 
     li {
-      font-size: .8rem;
+      font-size: 0.8rem;
       padding: 1rem 3rem;
     }
   }
@@ -35,7 +35,7 @@ export default function Header({ children }) {
         </h1>
         <ul>
           <li>
-            <Link href="/emporium">EMPORIUM</Link>
+            <Link href="/emporium">PROJECTS</Link>
           </li>
 
           <li>

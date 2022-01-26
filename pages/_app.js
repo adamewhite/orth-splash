@@ -165,7 +165,7 @@ body {
 }
 
 a:hover {
-  color: red;
+  color: #ff1e00;
   transition: 200ms;
 }
 

@@ -51,7 +51,7 @@ export default function CV() {
           Painting and Sculpture
         </li>
         <li>
-          <span>2017</span> Tempus Projects Artist in Residence, Tampa, FL
+          <span>2017</span> Artist in Residence, Tempus Projects, Tampa, FL
         </li>
         <li>
           <span>2017</span> Artist in Residence, SOMA, Mexico City, Mexico
@@ -258,14 +258,14 @@ export default function CV() {
           <span>2003</span> Holopaw - S/T, Sub Pop Records
         </li>
         <li>
-          <span>2002</span> Ugly Casanova – Sharpen Your Teeth (collaboration
+          <span>2002</span> Ugly Casanova - Sharpen Your Teeth (collaboration
           with Isaac Brock), Sub Pop Records
         </li>
       </ul>
       <h2>MUSIC VIDEOS</h2>
       <ul>
         <li>
-          <span>2013</span> Holopaw – “Dirty Boots,” costuming, styling, titling
+          <span>2013</span> Holopaw - “Dirty Boots,” costuming, styling, titling
         </li>
         <li>
           <span>2013</span> Holopaw - “The Lights From the Disco,” Director
