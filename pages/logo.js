@@ -1,6 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
-import Logo from "../public/martinlogo.png";
+import Logo from "../public/martineditedlogo.png";
 import styled from "styled-components";
 
 const HomeStyles = styled.main`
