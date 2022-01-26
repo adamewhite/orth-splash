@@ -10,7 +10,7 @@ const HomeStyles = styled.main`
 
   div {
     width: 1000px;
-    min-width: 500px;
+    min-width: 400px;
   }
 `;
 
