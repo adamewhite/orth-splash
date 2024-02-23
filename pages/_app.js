@@ -160,7 +160,7 @@ body {
   font-size: 10px;
   min-width: 320px;
   /* font-style: italic; */
-  background: rgb(238, 242, 227);
+  background: rgb(241, 238, 227);
   margin: 1rem 5rem;
   /* border: 1px solid green; */
 }
