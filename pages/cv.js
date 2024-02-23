@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 
 const CVStyles = styled.div`
   margin: 0 5rem;
@@ -25,6 +25,25 @@ const CVStyles = styled.div`
 
       ul {
         padding-left: 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 475px) {
+    margin: 0 1.5rem;
+    ul {
+      li {
+        font-size: 0.8rem;
+        line-height: 1.1rem;
+        padding: 0.1rem 0.5rem;
+
+        span {
+          padding-right: 0.5rem;
+        }
+
+        ul {
+          padding-left: 0.5rem;
+        }
       }
     }
   }
@@ -249,7 +268,7 @@ export default function CV() {
         </li>
         <li>
           <span>2009</span> Holopaw - Oh, Glory. Oh, Wilderness, Bakery Outlet
-          Records{" "}
+          Records{' '}
         </li>
         <li>
           <span>2005</span> Holopaw - Quit +/or Fight, Sub Pop Records

@@ -1,5 +1,5 @@
-import Header from "../components/Header";
-import { createGlobalStyle } from "styled-components";
+import Header from '../components/Header';
+import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
@@ -158,14 +158,29 @@ ul {
 body {
   font-family: Helvetica, sans-serif;
   font-size: 10px;
+  min-width: 320px;
   /* font-style: italic; */
-  /* background:green; */
-  margin: 1rem 10rem;
+  background: rgb(238, 242, 227);
+  margin: 1rem 5rem;
   /* border: 1px solid green; */
 }
 
+
+@media (max-width: 768px) {
+    body {
+      margin: 1rem .5rem;
+    }
+  }
+
+@media (max-width: 475px) {
+  body {
+    margin: .5rem .2rem;
+
+  }
+}
+
 a:hover {
-  color: #ff1e00;
+  color: #f85e49;
   transition: 200ms;
 }
 
