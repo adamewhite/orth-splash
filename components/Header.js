@@ -1,5 +1,4 @@
 import Link from 'next/link';
-import Head from 'next/head';
 import styled from 'styled-components';
 
 const HeaderStyles = styled.header`
@@ -35,25 +34,6 @@ const HeaderStyles = styled.header`
 export default function Header({ children }) {
   return (
     <>
-      <Head>
-        <title>JOHN ORTH</title>
-        <meta
-          property='og:title'
-          content='John Orth'
-        />
-        <meta
-          name='og:description'
-          content='John Orth is an artist based in Brooklyn and Maine.'
-        />
-        <meta
-          property='og:url'
-          content='johnorth.com'
-        />
-        <meta
-          property='og:image'
-          content='https://res.cloudinary.com/dixi5g16o/image/upload/v1708803648/13_pxrefk.jpg'
-        />
-      </Head>
       <HeaderStyles>
         <h1>
           <Link href='/'>JOHN ORTH</Link>

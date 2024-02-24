@@ -1,4 +1,5 @@
 import Header from '../components/Header';
+import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
@@ -189,6 +190,25 @@ a:hover {
 function MyApp({ Component, pageProps }) {
   return (
     <>
+      <Head>
+        <title>JOHN ORTH</title>
+        <meta
+          property='og:title'
+          content='John Orth'
+        />
+        <meta
+          name='og:description'
+          content='John Orth is an artist based in Brooklyn and Maine.'
+        />
+        <meta
+          property='og:url'
+          content='johnorth.com'
+        />
+        <meta
+          property='og:image'
+          content='https://res.cloudinary.com/dixi5g16o/image/upload/v1708803648/13_pxrefk.jpg'
+        />
+      </Head>
       <GlobalStyles />
       <Header>
         <Component {...pageProps} />
