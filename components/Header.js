@@ -42,7 +42,7 @@ export default function Header({ children }) {
           content='John Orth'
         />
         <meta
-          name='description'
+          name='og:description'
           content='John Orth is an artist based in Brooklyn and Maine.'
         />
         <meta
