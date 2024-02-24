@@ -37,6 +37,22 @@ export default function Header({ children }) {
     <>
       <Head>
         <title>JOHN ORTH</title>
+        <meta
+          property='og:title'
+          content='John Orth'
+        />
+        <meta
+          property='og:type'
+          content='video.movie'
+        />
+        <meta
+          property='og:url'
+          content='johnorth.com'
+        />
+        <meta
+          property='og:image'
+          content='https://res.cloudinary.com/dixi5g16o/image/upload/v1708803648/13_pxrefk.jpg'
+        />
       </Head>
       <HeaderStyles>
         <h1>
