@@ -191,10 +191,10 @@ function MyApp({ Component, pageProps }) {
   return (
     <>
       <Head>
-        <title>JOHN ORTH</title>
+        <title>JOHN ORTH!</title>
         <meta
           property='og:title'
-          content='John Orth'
+          content='John Orth!'
         />
         <meta
           name='og:description'
