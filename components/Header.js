@@ -36,7 +36,7 @@ export default function Header({ children }) {
     <>
       <HeaderStyles>
         <h1>
-          <Link href='/'>JOHN ORTH?</Link>
+          <Link href='/'>JOHN ORTH</Link>
         </h1>
         <ul>
           <li>
