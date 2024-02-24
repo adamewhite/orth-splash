@@ -42,8 +42,8 @@ export default function Header({ children }) {
           content='John Orth'
         />
         <meta
-          property='og:type'
-          content='video.movie'
+          name='description'
+          content='John Orth is an artist based in Brooklyn and Maine.'
         />
         <meta
           property='og:url'
