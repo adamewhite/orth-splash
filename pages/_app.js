@@ -206,7 +206,7 @@ function MyApp({ Component, pageProps }) {
         />
         <meta
           property='og:image'
-          content='https://res.cloudinary.com/dixi5g16o/image/upload/v1708803648/13_pxrefk.jpg'
+          content='https://res.cloudinary.com/dixi5g16o/image/upload/v1708885234/orth-link-preview_oadyes.jpg'
         />
       </Head>
       <GlobalStyles />

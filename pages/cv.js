@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
 
 const CVStyles = styled.div`
   margin: 0 5rem;
