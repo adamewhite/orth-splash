@@ -2,6 +2,10 @@ import Header from '../components/Header';
 import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 
+const hue = (h) => `hsl(${h}, 98%, 93%)`;
+const background = (hueA, hueB) =>
+  `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
+
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
@@ -160,8 +164,10 @@ body {
   font-family: Helvetica, sans-serif;
   font-size: 10px;
   min-width: 320px;
+  min-height: 100vh;
   /* font-style: italic; */
-  background: rgb(241, 238, 227);
+  /* background: rgb(241, 238, 227); */
+  background: ${background(42, 50)};
   margin: 1rem 5rem;
   /* border: 1px solid green; */
 }
@@ -169,13 +175,13 @@ body {
 
 @media (max-width: 768px) {
     body {
-      margin: 1rem .5rem;
+      margin: 1rem 1rem;
     }
   }
 
 @media (max-width: 475px) {
   body {
-    margin: .5rem .2rem;
+    margin: .5rem .5rem;
 
   }
 }

@@ -2,30 +2,52 @@ import Link from 'next/link';
 import styled from 'styled-components';
 
 const HeaderStyles = styled.header`
+  padding-top: 2rem;
   padding-bottom: 1rem;
+  text-align: center;
   /* background: yellow; */
 
   h1 {
-    font-size: 1.4rem;
-    text-align: center;
+    font-size: 1.75rem; /* 25% bigger for desktop */
+    margin: 0;
   }
 
   ul {
-    display: flex;
-    flex-direction: row nowrap;
+    display: inline-flex;
+    flex-direction: row;
     justify-content: center;
+    list-style: none;
+    margin: 0;
+    padding: 0;
 
     li {
-      font-size: 0.8rem;
+      font-size: 1rem; /* 25% bigger for desktop */
       padding: 1rem 3rem;
     }
   }
 
-  @media (max-width: 475px) {
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 1.65rem;
+    }
+
     ul {
       li {
-        font-size: 0.8rem;
-        padding: 1rem;
+        font-size: 1rem;
+        padding: 1rem 1rem;
+      }
+    }
+  }
+
+  @media (max-width: 475px) {
+    h1 {
+      font-size: 1.5rem;
+    }
+
+    ul {
+      li {
+        font-size: 1rem;
+        padding: 0.8rem 0.8rem;
       }
     }
   }
@@ -40,7 +62,7 @@ export default function Header({ children }) {
         </h1>
         <ul>
           <li>
-            <Link href='/emporium'>PROJECTS</Link>
+            <Link href='/projects'>PROJECTS</Link>
           </li>
 
           <li>
