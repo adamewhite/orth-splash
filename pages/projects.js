@@ -248,27 +248,27 @@ export default function Emporium() {
     },
     {
       src: '/04_orth_new_waves_of_living_i_2024.jpg',
-      title: 'New Waves of Living I',
+      title: 'New Waves of Living',
       year: '2024',
     },
     {
       src: '/05_orth_new_waves_of_living_ii_2024.jpg.jpg',
-      title: 'New Waves of Living II',
+      title: 'New Waves of Living',
       year: '2024',
     },
     {
       src: '/07_orth_the_orangerie_i_2019.jpg',
-      title: 'The Orangerie I',
+      title: 'The Orangerie',
       year: '2019',
     },
     {
       src: '/08_orth_the_orangerie_ii_2019.jpg',
-      title: 'The Orangerie II',
+      title: 'The Orangerie',
       year: '2019',
     },
     {
       src: '/09_orth_a_flare_tossed_in_the_room_i_2019.jpg',
-      title: 'A Flare Tossed in the Room I',
+      title: 'A Flare Tossed in the Room',
       year: '2019',
     },
   ];
@@ -289,7 +289,9 @@ export default function Emporium() {
 
   const prevImage = (e) => {
     e?.stopPropagation();
-    setCurrentImageIndex((prev) => (prev - 1 + projects.length) % projects.length);
+    setCurrentImageIndex(
+      (prev) => (prev - 1 + projects.length) % projects.length,
+    );
   };
 
   useEffect(() => {
@@ -297,7 +299,9 @@ export default function Emporium() {
 
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        setCurrentImageIndex((prev) => (prev - 1 + projects.length) % projects.length);
+        setCurrentImageIndex(
+          (prev) => (prev - 1 + projects.length) % projects.length,
+        );
       } else if (e.key === 'ArrowRight') {
         setCurrentImageIndex((prev) => (prev + 1) % projects.length);
       } else if (e.key === 'Escape') {
@@ -312,7 +316,7 @@ export default function Emporium() {
   return (
     <>
       <EmporiumStyles>
-        <figure className="video-container">
+        <figure className='video-container'>
           <iframe
             title='vimeo-player'
             src='https://player.vimeo.com/video/215871418'
@@ -320,13 +324,16 @@ export default function Emporium() {
             height='450'
           ></iframe>
           <figcaption>
-            Emporium, <span className="year">2019</span>
+            Emporium <span className='year'> | 2019</span>
           </figcaption>
         </figure>
 
-        <div className="images-container">
+        <div className='images-container'>
           {projects.map((project, index) => (
-            <figure key={index} className="image-item">
+            <figure
+              key={index}
+              className='image-item'
+            >
               <div
                 className={`image-wrapper ${!isMobile ? 'clickable' : ''}`}
                 onClick={!isMobile ? () => openLightbox(index) : undefined}
@@ -340,7 +347,7 @@ export default function Emporium() {
                 />
               </div>
               <figcaption>
-                {project.title}, <span className="year">{project.year}</span>
+                {project.title} <span className='year'> | {project.year}</span>
               </figcaption>
             </figure>
           ))}
@@ -349,14 +356,32 @@ export default function Emporium() {
 
       {lightboxOpen && (
         <LightboxStyles onClick={closeLightbox}>
-          <button className="close-button" onClick={closeLightbox}>×</button>
-          <button className="nav-button prev" onClick={prevImage}>‹</button>
-          <button className="nav-button next" onClick={nextImage}>›</button>
-          <div className="lightbox-content" onClick={(e) => e.stopPropagation()}>
+          <button
+            className='close-button'
+            onClick={closeLightbox}
+          >
+            ×
+          </button>
+          <button
+            className='nav-button prev'
+            onClick={prevImage}
+          >
+            ‹
+          </button>
+          <button
+            className='nav-button next'
+            onClick={nextImage}
+          >
+            ›
+          </button>
+          <div
+            className='lightbox-content'
+            onClick={(e) => e.stopPropagation()}
+          >
             <img
               src={projects[currentImageIndex].src}
               alt={`${projects[currentImageIndex].title} ${projects[currentImageIndex].year}`}
-              className="lightbox-image"
+              className='lightbox-image'
             />
           </div>
         </LightboxStyles>
