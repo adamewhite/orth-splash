@@ -121,7 +121,7 @@ export default function CV() {
               Commonwealth University, MFA
             </li>
             <li>
-              <span>2016</span> Artist in Residence, Mildred's Lane, Beach Lake,
+              <span>2016</span> Artist in Residence, Mildred&apos;s Lane, Beach Lake,
               PA, VCU Fellow
             </li>
             <li>
@@ -343,7 +343,7 @@ export default function CV() {
           <h2 id="recordings-heading">RECORDINGS</h2>
           <ul>
             <li>
-              <span>2013</span> Holopaw - Old Vs New EP/Through 'til the Morning,
+              <span>2013</span> Holopaw - Old Vs New EP/Through &apos;til the Morning,
               Misra Records
             </li>
             <li>
@@ -369,14 +369,14 @@ export default function CV() {
           <h2 id="music-videos-heading">MUSIC VIDEOS</h2>
           <ul>
             <li>
-              <span>2013</span> Holopaw - "Dirty Boots," costuming, styling,
+              <span>2013</span> Holopaw - &quot;Dirty Boots,&quot; costuming, styling,
               titling
             </li>
             <li>
-              <span>2013</span> Holopaw - "The Lights From the Disco," Director
+              <span>2013</span> Holopaw - &quot;The Lights From the Disco,&quot; Director
             </li>
             <li>
-              <span>2005</span> Holopaw - "Curious," co-director with Alan Calpe
+              <span>2005</span> Holopaw - &quot;Curious,&quot; co-director with Alan Calpe
             </li>
           </ul>
         </Section>

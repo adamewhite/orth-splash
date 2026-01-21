@@ -282,17 +282,17 @@ export default function Emporium() {
 
     const handleKeyDown = (e) => {
       if (e.key === 'ArrowLeft') {
-        prevImage();
+        setCurrentImageIndex((prev) => (prev - 1 + projects.length) % projects.length);
       } else if (e.key === 'ArrowRight') {
-        nextImage();
+        setCurrentImageIndex((prev) => (prev + 1) % projects.length);
       } else if (e.key === 'Escape') {
-        closeLightbox();
+        setLightboxOpen(false);
       }
     };
 
     window.addEventListener('keydown', handleKeyDown);
     return () => window.removeEventListener('keydown', handleKeyDown);
-  }, [lightboxOpen, currentImageIndex]);
+  }, [lightboxOpen, projects.length]);
 
   return (
     <>
