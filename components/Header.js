@@ -10,6 +10,7 @@ const HeaderStyles = styled.header`
   h1 {
     font-size: 1.75rem; /* 25% bigger for desktop */
     margin: 0;
+    margin-bottom: 0.5rem;
   }
 
   ul {
@@ -41,12 +42,12 @@ const HeaderStyles = styled.header`
 
   @media (max-width: 475px) {
     h1 {
-      font-size: 1.5rem;
+      font-size: 1.75rem;
     }
 
     ul {
       li {
-        font-size: 1rem;
+        font-size: 1.125rem;
         padding: 0.8rem 0.8rem;
       }
     }

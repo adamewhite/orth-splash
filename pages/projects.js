@@ -127,7 +127,7 @@ const EmporiumStyles = styled.div`
     }
 
     figcaption {
-      font-size: 1.25rem; /* 25% larger on mobile */
+      font-size: 1.1rem;
     }
   }
 `;
