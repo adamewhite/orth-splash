@@ -14,6 +14,10 @@ const GlobalStyles = createGlobalStyle`
    License: none (public domain)
 */
 
+html {
+  background: ${background(42, 50)};
+}
+
 html,
 body,
 div,

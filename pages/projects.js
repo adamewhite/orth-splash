@@ -110,6 +110,7 @@ const EmporiumStyles = styled.div`
   @media (max-width: 480px) {
     .video-container {
       padding: 0;
+      padding-top: 2rem;
       width: 100%;
       margin-bottom: 5rem;
     }
