@@ -11,7 +11,7 @@ const EmporiumStyles = styled.div`
 
   .video-container {
     padding: 1rem 3rem;
-    padding-top: 3rem;
+    padding-top: 4rem;
     max-width: 800px;
     width: 100%;
     display: flex;
@@ -51,11 +51,14 @@ const EmporiumStyles = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    cursor: pointer;
     transition: opacity 200ms;
 
-    &:hover {
-      opacity: 0.8;
+    &.clickable {
+      cursor: pointer;
+
+      &:hover {
+        opacity: 0.8;
+      }
     }
 
     img {
@@ -69,7 +72,7 @@ const EmporiumStyles = styled.div`
 
   figcaption {
     margin-top: 1.5rem;
-    font-size: 0.9rem;
+    font-size: 1.125rem; /* 25% bigger */
     text-align: center;
     font-style: italic;
   }
@@ -123,7 +126,7 @@ const EmporiumStyles = styled.div`
     }
 
     figcaption {
-      font-size: 0.8rem;
+      font-size: 1.25rem; /* 25% larger on mobile */
     }
   }
 `;
@@ -225,6 +228,17 @@ const LightboxStyles = styled.div`
 export default function Emporium() {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const [isMobile, setIsMobile] = useState(false);
+
+  useEffect(() => {
+    const checkMobile = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
   const projects = [
     {
       src: '/03_orth_congress_of_beauty_2023.jpg',
@@ -313,9 +327,8 @@ export default function Emporium() {
           {projects.map((project, index) => (
             <figure key={index} className="image-item">
               <div
-                className="image-wrapper"
-                onClick={() => openLightbox(index)}
-                style={{ cursor: 'pointer' }}
+                className={`image-wrapper ${!isMobile ? 'clickable' : ''}`}
+                onClick={!isMobile ? () => openLightbox(index) : undefined}
               >
                 <Image
                   src={project.src}

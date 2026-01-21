@@ -2,6 +2,8 @@ import Header from '../components/Header';
 import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 
+const GOOGLE_FONTS_URL = 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap';
+
 const hue = (h) => `hsl(${h}, 98%, 93%)`;
 const background = (hueA, hueB) =>
   `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
@@ -161,7 +163,7 @@ ul {
 }
 
 body {
-  font-family: Helvetica, sans-serif;
+  font-family: 'Hanken Grotesk', Helvetica, sans-serif;
   font-size: 10px;
   min-width: 320px;
   min-height: 100vh;
@@ -198,6 +200,9 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>JOHN ORTH</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link href={GOOGLE_FONTS_URL} rel="stylesheet" />
         <meta
           property='og:title'
           content='JOHN ORTH'
