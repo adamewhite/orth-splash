@@ -69,6 +69,17 @@ const EmporiumStyles = styled.div`
       width: auto !important;
       height: auto !important;
       object-fit: contain;
+      opacity: 0;
+      animation: fadeIn 0.6s ease-in forwards;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 
@@ -173,6 +184,8 @@ const LightboxStyles = styled.div`
     width: auto !important;
     height: auto !important;
     object-fit: contain;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in forwards;
   }
 
   .close-button {
@@ -234,6 +247,15 @@ const LightboxStyles = styled.div`
       font-size: 2rem;
       top: 1rem;
       right: 1rem;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 `;
