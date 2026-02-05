@@ -243,33 +243,255 @@ export default function Emporium() {
   const projects = [
     {
       src: '/03_orth_congress_of_beauty_2023.jpg',
-      title: 'Congress of Beauty',
+      title: 'Congress of Beauty I',
       year: '2023',
+      refNumber: 1,
     },
     {
       src: '/04_orth_new_waves_of_living_i_2024.jpg',
-      title: 'New Waves of Living',
+      title: 'New Waves of Living I',
       year: '2024',
+      refNumber: 2,
     },
     {
       src: '/05_orth_new_waves_of_living_ii_2024.jpg.jpg',
-      title: 'New Waves of Living',
+      title: 'New Waves of Living II',
       year: '2024',
+      refNumber: 3,
     },
     {
       src: '/07_orth_the_orangerie_i_2019.jpg',
-      title: 'The Orangerie',
+      title: 'The Orangerie I',
       year: '2019',
+      refNumber: 4,
     },
     {
       src: '/08_orth_the_orangerie_ii_2019.jpg',
-      title: 'The Orangerie',
+      title: 'The Orangerie II',
       year: '2019',
+      refNumber: 5,
     },
     {
       src: '/09_orth_a_flare_tossed_in_the_room_i_2019.jpg',
-      title: 'A Flare Tossed in the Room',
+      title: 'A Flare Tossed in the Room I',
       year: '2019',
+      refNumber: 6,
+    },
+    {
+      src: '/10_orth_chant_d\'amour_2020.jpg',
+      title: 'Chant d\'Amour I',
+      year: '2020',
+      refNumber: 7,
+    },
+    {
+      src: '/11_orth_shell_painting.jpg',
+      title: 'Shell Painting',
+      year: '',
+      refNumber: 8,
+    },
+    {
+      src: '/12_orth_tramp_1.jpg',
+      title: 'Tramp I',
+      year: '',
+      refNumber: 9,
+    },
+    {
+      src: '/12_orth_tramp_2.jpg',
+      title: 'Tramp II',
+      year: '',
+      refNumber: 10,
+    },
+    {
+      src: '/13_orth_drawing_1.jpg',
+      title: 'Drawing I',
+      year: '',
+      refNumber: 11,
+    },
+    {
+      src: '/14_orth_drawing_2.jpg',
+      title: 'Drawing II',
+      year: '',
+      refNumber: 12,
+    },
+    {
+      src: '/15_orth_drawing_3.jpg',
+      title: 'Drawing III',
+      year: '',
+      refNumber: 13,
+    },
+    {
+      src: '/16_orth_drawing_4.jpg',
+      title: 'Drawing IV',
+      year: '',
+      refNumber: 14,
+    },
+    {
+      src: '/17_orth_drawing_5.jpg',
+      title: 'Drawing V',
+      year: '',
+      refNumber: 15,
+    },
+    {
+      src: '/18_orth_drawing_6.jpg',
+      title: 'Drawing VI',
+      year: '',
+      refNumber: 16,
+    },
+    {
+      src: '/19_orth_drawing_7.jpg',
+      title: 'Drawing VII',
+      year: '',
+      refNumber: 17,
+    },
+    {
+      src: '/20_orth_drawing_8.jpg',
+      title: 'Drawing VIII',
+      year: '',
+      refNumber: 18,
+    },
+    {
+      src: '/21_orth_flame_tossed_2.jpg',
+      title: 'Flame Tossed II',
+      year: '',
+      refNumber: 19,
+    },
+    {
+      src: '/22_orth_chant_d_amour_2.jpg',
+      title: 'Chant d\'Amour II',
+      year: '',
+      refNumber: 20,
+    },
+    {
+      src: '/23_orth_flame_tossed_3.jpg',
+      title: 'Flame Tossed III',
+      year: '',
+      refNumber: 21,
+    },
+    {
+      src: '/24_orth_flame_tossed_4.jpg',
+      title: 'Flame Tossed IV',
+      year: '',
+      refNumber: 22,
+    },
+    {
+      src: '/24_orth_orange_boy.jpg',
+      title: 'Orange Boy',
+      year: '',
+      refNumber: 23,
+    },
+    {
+      src: '/25_orth_chant_d_amour_3.jpg',
+      title: 'Chant d\'Amour III',
+      year: '',
+      refNumber: 24,
+    },
+    {
+      src: '/26_orth_tramp_3.jpg',
+      title: 'Tramp III',
+      year: '',
+      refNumber: 25,
+    },
+    {
+      src: '/27_orth_congress_of_beauty_2.jpg',
+      title: 'Congress of Beauty II',
+      year: '',
+      refNumber: 26,
+    },
+    {
+      src: '/28_orth_orange_head_1.jpg',
+      title: 'Orange Head I',
+      year: '',
+      refNumber: 27,
+    },
+    {
+      src: '/29_orth_cypress_balls.jpg',
+      title: 'Cypress Balls',
+      year: '',
+      refNumber: 28,
+    },
+    {
+      src: '/30_orth_orange_head_2.jpg',
+      title: 'Orange Head II',
+      year: '',
+      refNumber: 29,
+    },
+    {
+      src: '/31_orth_orange_ledge_1.jpg',
+      title: 'Orange Ledge I',
+      year: '',
+      refNumber: 30,
+    },
+    {
+      src: '/32_orth_orange_shells_1.jpg',
+      title: 'Orange Shells I',
+      year: '',
+      refNumber: 31,
+    },
+    {
+      src: '/33_orth_orange_shells_2.jpg',
+      title: 'Orange Shells II',
+      year: '',
+      refNumber: 32,
+    },
+    {
+      src: '/34_orth_orange_bag_1.jpg',
+      title: 'Orange Bag I',
+      year: '',
+      refNumber: 33,
+    },
+    {
+      src: '/35_orth_orange_ledge_2.jpg',
+      title: 'Orange Ledge II',
+      year: '',
+      refNumber: 34,
+    },
+    {
+      src: '/36_orth_orange_bag_2.jpg',
+      title: 'Orange Bag II',
+      year: '',
+      refNumber: 35,
+    },
+    {
+      src: '/37_orth_mirror_landscape.jpg',
+      title: 'Mirror Landscape',
+      year: '',
+      refNumber: 36,
+    },
+    {
+      src: '/38_orth_shadow_spear.jpg',
+      title: 'Shadow Spear I',
+      year: '',
+      refNumber: 37,
+    },
+    {
+      src: '/39_orth_tramp_carry.jpg',
+      title: 'Tramp Carry',
+      year: '',
+      refNumber: 38,
+    },
+    {
+      src: '/40_orth_treadmill_1.jpg',
+      title: 'Treadmill I',
+      year: '',
+      refNumber: 39,
+    },
+    {
+      src: '/41_orth_treadmill_2.jpg',
+      title: 'Treadmill II',
+      year: '',
+      refNumber: 40,
+    },
+    {
+      src: '/42_orth_treadmill_3.jpg',
+      title: 'Treadmill III',
+      year: '',
+      refNumber: 41,
+    },
+    {
+      src: '/43_orth_shadow_spear_2.jpg',
+      title: 'Shadow Spear II',
+      year: '',
+      refNumber: 42,
     },
   ];
 
@@ -340,14 +562,14 @@ export default function Emporium() {
               >
                 <Image
                   src={project.src}
-                  alt={`${project.title} ${project.year}`}
+                  alt={`${project.refNumber}. ${project.title}${project.year ? ' ' + project.year : ''}`}
                   width={800}
                   height={600}
                   style={{ width: '100%', height: 'auto' }}
                 />
               </div>
               <figcaption>
-                {project.title} <span className='year'> | {project.year}</span>
+                {project.refNumber}. {project.title}{project.year && <span className='year'> | {project.year}</span>}
               </figcaption>
             </figure>
           ))}
@@ -380,7 +602,7 @@ export default function Emporium() {
           >
             <img
               src={projects[currentImageIndex].src}
-              alt={`${projects[currentImageIndex].title} ${projects[currentImageIndex].year}`}
+              alt={`${projects[currentImageIndex].refNumber}. ${projects[currentImageIndex].title}${projects[currentImageIndex].year ? ' ' + projects[currentImageIndex].year : ''}`}
               className='lightbox-image'
             />
           </div>

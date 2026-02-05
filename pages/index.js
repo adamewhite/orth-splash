@@ -5,11 +5,11 @@ import styled from 'styled-components';
 
 const HomeStyles = styled.main`
   width: 100%;
-  height: calc(100vh - 200px); /* Viewport height minus header space and bottom margin */
+  height: calc(100vh - 14rem); /* Viewport height minus header, body margins, and spacing */
   display: flex;
   justify-content: center;
-  align-items: flex-start;
-  margin-bottom: 2rem; /* Space at the bottom */
+  align-items: center; /* Center the image vertically */
+  overflow: hidden; /* Prevent any overflow */
 
   .image-container {
     position: relative;
@@ -18,13 +18,11 @@ const HomeStyles = styled.main`
   }
 
   @media (max-width: 768px) {
-    height: calc(100vh - 160px);
-    margin-bottom: 1rem;
+    height: calc(100vh - 13rem); /* Account for smaller body margins */
   }
 
   @media (max-width: 475px) {
-    height: calc(100vh - 140px);
-    margin-bottom: 0.5rem;
+    height: calc(100vh - 11rem); /* Account for smallest body margins */
   }
 `;
 
