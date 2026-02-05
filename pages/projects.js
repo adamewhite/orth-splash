@@ -170,7 +170,7 @@ const LightboxStyles = styled.div`
 
   .lightbox-content {
     position: relative;
-    max-width: 80vw;
+    max-width: 70vw;
     max-height: 90svh;
     cursor: default;
     display: flex;
@@ -179,7 +179,7 @@ const LightboxStyles = styled.div`
   }
 
   .lightbox-image {
-    max-width: 80vw;
+    max-width: 70vw;
     max-height: 90svh;
     width: auto !important;
     height: auto !important;
