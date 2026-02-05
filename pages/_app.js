@@ -174,8 +174,6 @@ body {
   font-family: 'Hanken Grotesk', Helvetica, sans-serif;
   font-size: 10px;
   min-width: 320px;
-  min-height: 100vh;
-  min-height: -webkit-fill-available;
   /* font-style: italic; */
   /* background: rgb(241, 238, 227); */
   background-color: ${hue(46)};
