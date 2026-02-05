@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const HomeStyles = styled.main`
   width: 100%;
-  height: calc(100svh - 11rem); /* Small viewport height (visible area) minus header and body margins */
+  height: calc(var(--vh, 1svh) * 100 - 11rem); /* Use JS-calculated viewport height, fallback to svh */
   display: flex;
   justify-content: center;
   align-items: center; /* Center the image vertically */
@@ -29,11 +29,11 @@ const HomeStyles = styled.main`
   }
 
   @media (max-width: 768px) {
-    height: calc(100svh - 9rem); /* Account for smaller body margins and header on tablet */
+    height: calc(var(--vh, 1svh) * 100 - 9rem); /* Account for smaller body margins and header on tablet */
   }
 
   @media (max-width: 475px) {
-    height: calc(100svh - 8rem); /* Account for smallest body margins and header on mobile */
+    height: calc(var(--vh, 1svh) * 100 - 8rem); /* Account for smallest body margins and header on mobile */
   }
 `;
 

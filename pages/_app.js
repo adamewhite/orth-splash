@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Header from '../components/Header';
 import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
@@ -205,6 +206,23 @@ a:hover {
 `;
 
 function MyApp({ Component, pageProps }) {
+  useEffect(() => {
+    // Fix for iPad Chrome viewport height bug
+    const setVH = () => {
+      const vh = window.innerHeight * 0.01;
+      document.documentElement.style.setProperty('--vh', `${vh}px`);
+    };
+
+    setVH();
+    window.addEventListener('resize', setVH);
+    window.addEventListener('orientationchange', setVH);
+
+    return () => {
+      window.removeEventListener('resize', setVH);
+      window.removeEventListener('orientationchange', setVH);
+    };
+  }, []);
+
   return (
     <>
       <Head>

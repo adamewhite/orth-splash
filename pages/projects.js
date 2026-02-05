@@ -47,7 +47,7 @@ const EmporiumStyles = styled.div`
 
   .image-wrapper {
     width: 100%;
-    max-height: 80svh;
+    max-height: calc(var(--vh, 1svh) * 80);
     overflow: hidden;
     display: flex;
     align-items: center;
@@ -63,7 +63,7 @@ const EmporiumStyles = styled.div`
     }
 
     img {
-      max-height: 80svh;
+      max-height: calc(var(--vh, 1svh) * 80);
       max-width: 100%;
       min-width: 500px;
       width: auto !important;
@@ -160,7 +160,7 @@ const LightboxStyles = styled.div`
   top: 0;
   left: 0;
   width: 100vw;
-  height: 100svh;
+  height: calc(var(--vh, 1svh) * 100);
   background: rgba(0, 0, 0, 0.9);
   display: flex;
   align-items: center;
@@ -171,7 +171,7 @@ const LightboxStyles = styled.div`
   .lightbox-content {
     position: relative;
     max-width: 70vw;
-    max-height: 90svh;
+    max-height: calc(var(--vh, 1svh) * 90);
     cursor: default;
     display: flex;
     align-items: center;
@@ -180,7 +180,7 @@ const LightboxStyles = styled.div`
 
   .lightbox-image {
     max-width: 70vw;
-    max-height: 90svh;
+    max-height: calc(var(--vh, 1svh) * 90);
     width: auto !important;
     height: auto !important;
     object-fit: contain;
