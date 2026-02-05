@@ -15,6 +15,17 @@ const HomeStyles = styled.main`
     position: relative;
     width: 100%;
     height: 100%;
+    opacity: 0;
+    animation: fadeIn 0.6s ease-in forwards;
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
   }
 
   @media (max-width: 768px) {
