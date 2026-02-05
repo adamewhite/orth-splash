@@ -15,7 +15,10 @@ const GlobalStyles = createGlobalStyle`
 */
 
 html {
-  background: ${background(42, 50)};
+  background-color: ${hue(46)};
+  background-image: ${background(42, 50)};
+  background-attachment: fixed;
+  min-height: 100%;
 }
 
 html,
@@ -173,7 +176,9 @@ body {
   min-height: 100vh;
   /* font-style: italic; */
   /* background: rgb(241, 238, 227); */
-  background: ${background(42, 50)};
+  background-color: ${hue(46)};
+  background-image: ${background(42, 50)};
+  background-attachment: fixed;
   margin: 1rem 5rem;
   /* border: 1px solid green; */
 }

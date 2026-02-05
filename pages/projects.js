@@ -64,6 +64,7 @@ const EmporiumStyles = styled.div`
     img {
       max-height: 80vh;
       max-width: 100%;
+      min-width: 500px;
       width: auto !important;
       height: auto !important;
       object-fit: contain;
@@ -104,6 +105,10 @@ const EmporiumStyles = styled.div`
     .image-wrapper {
       width: 100%;
       margin: 0 auto;
+
+      img {
+        min-width: unset;
+      }
     }
   }
 
@@ -124,6 +129,12 @@ const EmporiumStyles = styled.div`
       padding: 2rem 0;
       gap: 5rem;
       width: 100%;
+    }
+
+    .image-wrapper {
+      img {
+        min-width: unset;
+      }
     }
 
     figcaption {
