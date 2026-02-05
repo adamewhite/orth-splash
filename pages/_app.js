@@ -18,7 +18,8 @@ html {
   background-color: ${hue(46)};
   background-image: ${background(42, 50)};
   background-attachment: fixed;
-  min-height: 100%;
+  height: 100%;
+  height: -webkit-fill-available;
 }
 
 html,
@@ -174,6 +175,7 @@ body {
   font-size: 10px;
   min-width: 320px;
   min-height: 100vh;
+  min-height: -webkit-fill-available;
   /* font-style: italic; */
   /* background: rgb(241, 238, 227); */
   background-color: ${hue(46)};
