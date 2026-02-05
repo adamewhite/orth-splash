@@ -32,6 +32,7 @@ const EmporiumStyles = styled.div`
     align-items: center;
     gap: 8rem;
     padding: 2rem 3rem;
+    padding-bottom: 5rem;
     max-width: 800px;
     width: 100%;
   }
