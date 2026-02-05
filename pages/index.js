@@ -5,7 +5,7 @@ import styled from 'styled-components';
 
 const HomeStyles = styled.main`
   width: 100%;
-  height: calc(100dvh - 11rem); /* Dynamic viewport height minus header and body margins */
+  height: calc(100svh - 11rem); /* Small viewport height (visible area) minus header and body margins */
   display: flex;
   justify-content: center;
   align-items: center; /* Center the image vertically */
@@ -29,11 +29,11 @@ const HomeStyles = styled.main`
   }
 
   @media (max-width: 768px) {
-    height: calc(100dvh - 9rem); /* Account for smaller body margins and header on tablet */
+    height: calc(100svh - 9rem); /* Account for smaller body margins and header on tablet */
   }
 
   @media (max-width: 475px) {
-    height: calc(100dvh - 8rem); /* Account for smallest body margins and header on mobile */
+    height: calc(100svh - 8rem); /* Account for smallest body margins and header on mobile */
   }
 `;
 
