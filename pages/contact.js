@@ -8,7 +8,8 @@ const ContactStyles = styled.div`
   justify-content: center;
   align-items: center;
 
-  button, .email {
+  button,
+  .email {
     background: none;
     border: none;
     color: inherit;
@@ -32,11 +33,16 @@ export default function Contact() {
   return (
     <ContactStyles>
       {showEmail ? (
-        <a href="mailto:johnorthisthehobbyist@gmail.com" className="email">
-          johnorthisthehobbyist@gmail.com
+        <a
+          href='mailto:johnorthstudio@gmail.com'
+          className='email'
+        >
+          johnorthstudio@gmail.com
         </a>
       ) : (
-        <button onClick={() => setShowEmail(true)}>Click Here for Email Address</button>
+        <button onClick={() => setShowEmail(true)}>
+          Click Here for Email Address
+        </button>
       )}
     </ContactStyles>
   );
