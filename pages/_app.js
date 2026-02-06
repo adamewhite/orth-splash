@@ -3,12 +3,8 @@ import Header from '../components/Header';
 import Head from 'next/head';
 import { createGlobalStyle } from 'styled-components';
 
-const GOOGLE_FONTS_URL = 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap';
-
-// Background colors - adjust hue values as needed
-const bgColor = 'hsl(46, 98%, 93%)';
-const gradientStart = 'hsl(42, 98%, 93%)';
-const gradientEnd = 'hsl(50, 98%, 93%)';
+const GOOGLE_FONTS_URL =
+  'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -16,13 +12,20 @@ const GlobalStyles = createGlobalStyle`
    License: none (public domain)
 */
 
+:root {
+  /* Background colors - adjust these values to change the site colors */
+  --bg-color: hsl(45, 84%, 71%);
+  --gradient-start: hsl(41.07692307692308, 90.27777777777779%, 71.76470588235294%);
+  --gradient-end: hsl(50, 67%, 63%);
+}
+
 *, *::before, *::after {
   box-sizing: border-box;
 }
 
 html {
-  background-color: ${bgColor};
-  background-image: linear-gradient(306deg, ${gradientStart}, ${gradientEnd});
+  background-color: var(--bg-color);
+  background-image: linear-gradient(306deg, var(--gradient-start), var(--gradient-end));
   background-attachment: fixed;
   height: 100%;
   height: -webkit-fill-available;
@@ -182,8 +185,8 @@ body {
   min-width: 320px;
   /* font-style: italic; */
   /* background: rgb(241, 238, 227); */
-  background-color: ${bgColor};
-  background-image: linear-gradient(306deg, ${gradientStart}, ${gradientEnd});
+  background-color: var(--bg-color);
+  background-image: linear-gradient(306deg, var(--gradient-start), var(--gradient-end));
   background-attachment: fixed;
   margin: 1rem 5rem;
   /* border: 1px solid green; */
@@ -232,9 +235,19 @@ function MyApp({ Component, pageProps }) {
     <>
       <Head>
         <title>JOHN ORTH</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
-        <link href={GOOGLE_FONTS_URL} rel="stylesheet" />
+        <link
+          rel='preconnect'
+          href='https://fonts.googleapis.com'
+        />
+        <link
+          rel='preconnect'
+          href='https://fonts.gstatic.com'
+          crossOrigin='anonymous'
+        />
+        <link
+          href={GOOGLE_FONTS_URL}
+          rel='stylesheet'
+        />
         <meta
           property='og:title'
           content='JOHN ORTH'
