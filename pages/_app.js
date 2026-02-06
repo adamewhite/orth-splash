@@ -14,9 +14,9 @@ const GlobalStyles = createGlobalStyle`
 
 :root {
   /* Background colors - adjust these values to change the site colors */
-  --bg-color: hsl(45, 84%, 71%);
-  --gradient-start: hsl(41.07692307692308, 90.27777777777779%, 71.76470588235294%);
-  --gradient-end: hsl(50, 67%, 63%);
+  --bg-color: hsl(45.365853658536594, 87.2340425531915%, 81.56862745098039%);
+  --gradient-start: hsl(41, 90%, 72%);
+  --gradient-end: hsl(50, 84%, 70%);
 }
 
 *, *::before, *::after {
