@@ -17,6 +17,7 @@ const ProjectsLandingStyles = styled.div`
     gap: 3rem;
     width: 100%;
     max-width: 1000px;
+    margin: 0 auto;
   }
 
   .category-card {
