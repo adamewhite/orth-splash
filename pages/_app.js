@@ -15,8 +15,8 @@ const GlobalStyles = createGlobalStyle`
 :root {
   /* Background colors - adjust these values to change the site colors */
   --bg-color: rgb(255, 217, 93);
-  --gradient-start: rgb(252, 225, 138);
-  --gradient-end: rgb(255, 223, 118);
+  --gradient-start: rgb(254, 225, 129);
+  --gradient-end: rgb(253, 219, 106);
 }
 
 *, *::before, *::after {
