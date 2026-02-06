@@ -20,9 +20,8 @@ const ProjectsLandingStyles = styled.div`
   }
 
   .category-card {
-    position: relative;
-    aspect-ratio: 4/3;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
     cursor: pointer;
     transition: opacity 200ms;
 
@@ -33,21 +32,14 @@ const ProjectsLandingStyles = styled.div`
     .image-wrapper {
       position: relative;
       width: 100%;
-      height: 100%;
+      aspect-ratio: 4/3;
+      overflow: hidden;
     }
 
     .category-title {
-      position: absolute;
-      bottom: 0;
-      left: 0;
-      right: 0;
-      background: rgba(0, 0, 0, 0.7);
-      color: white;
-      padding: 1.5rem;
+      padding: 1rem 0;
       font-size: 1.5rem;
       text-align: center;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
     }
   }
 
@@ -61,7 +53,6 @@ const ProjectsLandingStyles = styled.div`
 
     .category-card .category-title {
       font-size: 1.25rem;
-      padding: 1rem;
     }
   }
 
@@ -74,7 +65,6 @@ const ProjectsLandingStyles = styled.div`
 
     .category-card .category-title {
       font-size: 1.125rem;
-      padding: 0.75rem;
     }
   }
 `;
@@ -87,12 +77,12 @@ export default function ProjectsLanding() {
       heroImage: '/03_orth_congress_of_beauty_2023.jpg',
     },
     {
-      name: 'Sculpture/Installation',
+      name: 'Sculpture & Installation',
       slug: 'sculpture',
       heroImage: '/04_orth_new_waves_of_living_i_2024.jpg',
     },
     {
-      name: 'Drawing/Painting',
+      name: 'Drawing & Painting',
       slug: 'drawing',
       heroImage: '/14_orth_drawing_2.jpg',
     },
