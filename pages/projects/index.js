@@ -15,9 +15,9 @@ const ProjectsLandingStyles = styled.div`
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
-    width: 100%;
     max-width: 1000px;
     margin: 0 auto;
+    justify-self: center;
   }
 
   .category-card {
