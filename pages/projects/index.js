@@ -94,7 +94,7 @@ export default function ProjectsLanding() {
       heroImage: '/14_orth_drawing_2.jpg',
     },
     {
-      name: 'Photo',
+      name: 'Photography',
       slug: 'photo',
       heroImage: '/36_orth_orange_bag_2.jpg',
     },
