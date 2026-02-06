@@ -1,3 +1,4 @@
+import { useEffect } from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
 import styled from 'styled-components';
@@ -18,10 +19,12 @@ const ProjectsLandingStyles = styled.div`
   }
 
   .categories-grid a {
-    outline: none;
-
     &:focus {
       outline: none;
+    }
+
+    &:focus-visible {
+      outline: 2px solid black;
     }
   }
 
@@ -113,6 +116,13 @@ export default function ProjectsLanding() {
       heroImage: '/36_orth_orange_bag_2.jpg',
     },
   ];
+
+  useEffect(() => {
+    // Remove focus from any element on page load
+    if (document.activeElement) {
+      document.activeElement.blur();
+    }
+  }, []);
 
   return (
     <ProjectsLandingStyles>
