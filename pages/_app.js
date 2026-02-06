@@ -5,9 +5,10 @@ import { createGlobalStyle } from 'styled-components';
 
 const GOOGLE_FONTS_URL = 'https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@300;400;500;600;700&display=swap';
 
-const hue = (h) => `hsl(${h}, 98%, 93%)`;
-const background = (hueA, hueB) =>
-  `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
+// Background colors - adjust hue values as needed
+const bgColor = 'hsl(46, 98%, 93%)';
+const gradientStart = 'hsl(42, 98%, 93%)';
+const gradientEnd = 'hsl(50, 98%, 93%)';
 
 const GlobalStyles = createGlobalStyle`
 /* http://meyerweb.com/eric/tools/css/reset/
@@ -20,8 +21,8 @@ const GlobalStyles = createGlobalStyle`
 }
 
 html {
-  background-color: ${hue(46)};
-  background-image: ${background(42, 50)};
+  background-color: ${bgColor};
+  background-image: linear-gradient(306deg, ${gradientStart}, ${gradientEnd});
   background-attachment: fixed;
   height: 100%;
   height: -webkit-fill-available;
@@ -181,8 +182,8 @@ body {
   min-width: 320px;
   /* font-style: italic; */
   /* background: rgb(241, 238, 227); */
-  background-color: ${hue(46)};
-  background-image: ${background(42, 50)};
+  background-color: ${bgColor};
+  background-image: linear-gradient(306deg, ${gradientStart}, ${gradientEnd});
   background-attachment: fixed;
   margin: 1rem 5rem;
   /* border: 1px solid green; */
