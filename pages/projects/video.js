@@ -47,8 +47,10 @@ const VideoStyles = styled.div`
   }
 
   @media (max-width: 768px) {
+    padding: 3rem 1rem;
+
     .back-link {
-      margin: 1.5rem 1rem;
+      margin: 1.5rem 0;
     }
 
     .video-container {
@@ -61,8 +63,10 @@ const VideoStyles = styled.div`
   }
 
   @media (max-width: 475px) {
+    padding: 2rem 1rem;
+
     .back-link {
-      margin: 1rem 0.5rem;
+      margin: 1rem 0;
     }
 
     .video-container {

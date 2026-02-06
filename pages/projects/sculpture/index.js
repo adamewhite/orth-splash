@@ -68,7 +68,7 @@ const SculptureStyles = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 2rem 1rem;
+    padding: 3rem 1rem;
 
     .back-link {
       margin: 0 0 1.5rem 0;
@@ -90,7 +90,7 @@ const SculptureStyles = styled.div`
   }
 
   @media (max-width: 475px) {
-    padding: 1.5rem 0.5rem;
+    padding: 2rem 1rem;
 
     .projects-list {
       gap: 2.5rem;
