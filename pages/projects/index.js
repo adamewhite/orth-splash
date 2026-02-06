@@ -17,6 +17,14 @@ const ProjectsLandingStyles = styled.div`
     max-width: 1000px;
   }
 
+  .categories-grid a {
+    outline: none;
+
+    &:focus {
+      outline: none;
+    }
+  }
+
   .category-card {
     display: flex;
     flex-direction: column;
