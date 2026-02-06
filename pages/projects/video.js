@@ -101,6 +101,20 @@ export default function Video() {
           Emporium <span className='year'> | 2019</span>
         </figcaption>
       </figure>
+
+      <figure className='video-container'>
+        <iframe
+          title='youtube-player'
+          src='https://www.youtube.com/embed/HwhXUNIWV2Y'
+          width='800'
+          height='450'
+          allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
+          allowFullScreen
+        ></iframe>
+        <figcaption>
+          <span className='year'>Holopaw |</span> The Lights from the Disco
+        </figcaption>
+      </figure>
     </VideoStyles>
   );
 }

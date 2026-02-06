@@ -59,7 +59,7 @@ const ProjectsLandingStyles = styled.div`
     }
 
     .category-card .category-title {
-      font-size: 1.75rem;
+      font-size: 1.3125rem;
     }
   }
 
@@ -71,7 +71,7 @@ const ProjectsLandingStyles = styled.div`
     }
 
     .category-card .category-title {
-      font-size: 1.5rem;
+      font-size: 1.125rem;
     }
   }
 `;
