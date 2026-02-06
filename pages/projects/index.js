@@ -40,6 +40,11 @@ const ProjectsLandingStyles = styled.div`
       width: 100%;
       aspect-ratio: 4/3;
       overflow: hidden;
+
+      img {
+        opacity: 0;
+        animation: fadeIn 0.6s ease-in forwards;
+      }
     }
 
     .category-title {
@@ -47,6 +52,15 @@ const ProjectsLandingStyles = styled.div`
       font-size: 1.5rem;
       text-align: center;
       text-transform: uppercase;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 

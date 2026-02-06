@@ -46,6 +46,11 @@ const SculptureStyles = styled.div`
       height: 225px;
       flex-shrink: 0;
       overflow: hidden;
+
+      img {
+        opacity: 0;
+        animation: fadeIn 0.6s ease-in forwards;
+      }
     }
 
     .project-info {
@@ -98,6 +103,15 @@ const SculptureStyles = styled.div`
 
     .project-card .project-info h2 {
       font-size: 1.25rem;
+    }
+  }
+
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
     }
   }
 `;
