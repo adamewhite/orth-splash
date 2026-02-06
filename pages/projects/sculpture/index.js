@@ -13,9 +13,8 @@ const SculptureStyles = styled.div`
 
   .back-link {
     align-self: flex-start;
-    margin-bottom: 2rem;
+    margin: 2rem 3rem 2rem 0;
     font-size: 1rem;
-    text-decoration: underline;
     cursor: pointer;
 
     &:hover {
@@ -119,7 +118,7 @@ export default function SculptureLanding() {
     },
     {
       slug: 'chant-damour',
-      title: 'Un Chant D\'Amour',
+      title: 'Un Chant d\'Amour',
       year: '2020',
       heroImage: '/22_orth_chant_d_amour_2.jpg',
     },

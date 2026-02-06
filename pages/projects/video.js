@@ -11,7 +11,6 @@ const VideoStyles = styled.div`
     align-self: flex-start;
     margin: 2rem 3rem;
     font-size: 1rem;
-    text-decoration: underline;
     cursor: pointer;
 
     &:hover {

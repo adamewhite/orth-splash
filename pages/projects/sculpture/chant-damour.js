@@ -4,7 +4,7 @@ export default function ChantDamour() {
   const images = [
     {
       src: '/25_orth_chant_d_amour_3.jpg',
-      title: 'Chant d\'Amour III',
+      title: 'Un Chant d\'Amour III',
       year: '',
       medium: '',
       dimensions: '',
@@ -12,7 +12,7 @@ export default function ChantDamour() {
     },
     {
       src: '/22_orth_chant_d_amour_2.jpg',
-      title: 'Chant d\'Amour II',
+      title: 'Un Chant d\'Amour II',
       year: '',
       medium: '',
       dimensions: '',

@@ -6,18 +6,15 @@ const ProjectsLandingStyles = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 4rem 3rem;
-  max-width: 1200px;
-  margin: 0 auto;
+  padding: 4rem 0;
   width: 100%;
 
   .categories-grid {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     gap: 3rem;
+    width: 100%;
     max-width: 1000px;
-    margin: 0 auto;
-    justify-self: center;
   }
 
   .category-card {
@@ -41,11 +38,12 @@ const ProjectsLandingStyles = styled.div`
       padding: 1rem 0;
       font-size: 1.5rem;
       text-align: center;
+      text-transform: uppercase;
     }
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 1rem;
+    padding: 3rem 0;
 
     .categories-grid {
       grid-template-columns: 1fr;
@@ -53,19 +51,19 @@ const ProjectsLandingStyles = styled.div`
     }
 
     .category-card .category-title {
-      font-size: 1.25rem;
+      font-size: 1.75rem;
     }
   }
 
   @media (max-width: 475px) {
-    padding: 2rem 0.5rem;
+    padding: 2rem 0;
 
     .categories-grid {
       gap: 1.5rem;
     }
 
     .category-card .category-title {
-      font-size: 1.125rem;
+      font-size: 1.5rem;
     }
   }
 `;

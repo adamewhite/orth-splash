@@ -33,7 +33,7 @@ const HomeStyles = styled.main`
   }
 
   @media (max-width: 475px) {
-    height: calc(var(--vh, 1svh) * 100 - 8rem); /* Account for smallest body margins and header on mobile */
+    height: calc(var(--vh, 1svh) * 100 - 13rem); /* Account for smallest body margins and header on mobile */
   }
 `;
 

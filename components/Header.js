@@ -8,7 +8,7 @@ const HeaderStyles = styled.header`
   /* background: yellow; */
 
   h1 {
-    font-size: 1.75rem; /* 25% bigger for desktop */
+    font-size: 2.625rem; /* 50% bigger for desktop */
     margin: 0;
     margin-bottom: 0.5rem;
   }
@@ -22,7 +22,7 @@ const HeaderStyles = styled.header`
     padding: 0;
 
     li {
-      font-size: 1rem; /* 25% bigger for desktop */
+      font-size: 1.5rem; /* 50% bigger for desktop */
       padding: 1rem 3rem;
     }
   }
