@@ -51,7 +51,7 @@ const ProjectsLandingStyles = styled.div`
   }
 
   @media (max-width: 768px) {
-    padding: 3rem 0;
+    padding: 3rem 1rem;
 
     .categories-grid {
       grid-template-columns: 1fr;
@@ -64,7 +64,7 @@ const ProjectsLandingStyles = styled.div`
   }
 
   @media (max-width: 475px) {
-    padding: 2rem 0;
+    padding: 2rem 1rem;
 
     .categories-grid {
       gap: 1.5rem;
