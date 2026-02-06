@@ -10,10 +10,14 @@ const background = (hueA, hueB) =>
   `linear-gradient(306deg, ${hue(hueA)}, ${hue(hueB)})`;
 
 const GlobalStyles = createGlobalStyle`
-/* http://meyerweb.com/eric/tools/css/reset/ 
+/* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
 */
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
 
 html {
   background-color: ${hue(46)};

@@ -1,0 +1,19 @@
+{
+  "permissions": {
+    "allow": [
+      "mcp__ide__getDiagnostics",
+      "Bash(npm uninstall:*)",
+      "Bash(git add:*)",
+      "Bash(git rm:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "WebSearch",
+      "Bash(sips:*)",
+      "Bash(git reset:*)",
+      "Bash(The Lights from the Disco\" to video page\n- Make \"Holopaw)",
+      "Bash(\" non-italic while keeping song title italic\n- Reduce medium titles by 25% on tablet (1.3125rem) and mobile (1.125rem)\n- Desktop medium titles remain at 1.5rem\n\n🤖 Generated with [Claude Code](https://claude.com/claude-code)\n\nCo-Authored-By: Claude <noreply@anthropic.com>\nEOF\n)\")"
+    ],
+    "deny": [],
+    "ask": []
+  }
+}
